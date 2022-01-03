@@ -23,10 +23,9 @@ module OpenAIPoet
 
   # Collection of all poets in this application
   module Poets
-    Pushkin = Poet.new("Alexander", "Pushkin", "Russia", "1799", "1837", "pushkin")
-
     ALL = {
-      "pushkin" => Pushkin
+      "pushkin" => Poet.new("Alexander", "Pushkin", "Russia", "1799", "1837", "pushkin"),
+      "housman" => Poet.new("Alfred", "Housman", "England", "1859", "1936", "housman")
     }.freeze
 
     def self.find(slug)
